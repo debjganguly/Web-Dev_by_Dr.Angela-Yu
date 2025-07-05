@@ -1,4 +1,4 @@
-* {margin: 0;}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
@@ -20,9 +20,10 @@ footer {
   color: midnightblue;
 }
 
-img {
-  float: left;
+.tile-image {
   height: 200px;
+  float: left;
+  margin-right: 50px;
 }
 
 .left {
@@ -37,13 +38,11 @@ img {
   width: 45%;
 }
 
-@media (min-width: 680px) {
-  .card {
-  display: block;
-  width: 100%;
-  margin-bottom: 30px;
-  text-align: justify ;
-  }
+.creative {
+  color: midnightblue;
+}
+
+@media (max-width: 680px) {
 
   .logo {
     width: 100px;
