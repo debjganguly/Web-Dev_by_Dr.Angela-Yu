@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+    .redbox {
+      background-color: red;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .bluebox {
+      background-color: blue;
+    }
+    .yellowbox {
+      background-color: yellow;
+      grid-area: 4 / 2 / 5 / 3;
+    }
+    .blackbox {
+      background-color: rgb(31, 28, 28);
+      grid-area: 4 / 3 / 5 / 4;
+    }
+    .whitebox {
+      background-color: #f2f2f2;
+    }
+    .row1col2 {
+      width: auto;
+      grid-area: 1 / 2 / 2 / 5;
+    }
+    .row2col1 {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    .row2col2 {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .bottomright {
+      grid-area: 3 / 4 / 5 / 5;
+    }
+    .row3col1 {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="redbox"></div>
+    <div class="whitebox row1col2"></div>
+    <div class="whitebox row2col1"></div>
+    <div class="whitebox row2col2"></div>
+    <div class="bluebox"></div>
+    <div class="whitebox row3col1"></div>
+    <div class="yellowbox"></div>
+    <div class="blackbox"></div>
+    <div class="whitebox bottomright"></div>
+   </div>
+</body>
+
+</html> 
